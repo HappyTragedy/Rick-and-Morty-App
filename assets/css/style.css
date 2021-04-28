@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------------- CSS RESET --------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+body{
+    background-image: url(../images/space.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-body{
+    margin: 0 auto;
+}
+
+.container{
+    width: 75% !important;
+}
+
+.control{
+    text-align: end !important;
+}
+
+.input, .textarea {
+    max-width: 40% !important;
+    width: 40% !important;
+}
+
+.card{
+    box-shadow: 0 0.5em 1em -0.125em rgb(255 255 255 / 64%), 0 0 0 1px rgba(10,10,10,.02) !important;
+
+}
+
+.card-image {
+    display: block;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 7%;
+}
