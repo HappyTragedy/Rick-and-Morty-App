@@ -45,7 +45,15 @@ body{
 }
 
 .container{
-    width: 75% !important;
+    width: 65% !important;
+}
+
+.rick{
+    width: 30%;
+    margin: 0 auto;
+    position: fixed;
+    top: 49%;
+    left: 33%;
 }
 
 .control{
@@ -58,7 +66,7 @@ body{
 }
 
 .card{
-    box-shadow: 0 0.5em 1em -0.125em rgb(255 255 255 / 64%), 0 0 0 1px rgba(10,10,10,.02) !important;
+    box-shadow: 0 0.5em 1.2em -0.125em rgb(255 255 255 / 90%), 0 0 0 1px rgba(100, 100, 100, 0.02) !important;
 
 }
 
@@ -68,4 +76,9 @@ body{
     width: 85%;
     margin: 0 auto;
     padding-top: 7%;
+}
+
+
+.column{
+    transform: rotateX(28deg) translateZ(8px) !important;
 }
