@@ -52,7 +52,7 @@ body{
     width: 30%;
     margin: 0 auto;
     position: fixed;
-    top: 49%;
+    bottom: 0%;
     left: 33%;
 }
 
@@ -63,12 +63,25 @@ body{
 .input, .textarea {
     max-width: 40% !important;
     width: 40% !important;
+    background-color: #353535 !important;
+    border-color: transparent !important;
+}
+
+.input:focus, .textarea:focus{
+    color: white !important;
 }
 
 .card{
-    box-shadow: 0 0.5em 1.2em -0.125em rgb(255 255 255 / 90%), 0 0 0 1px rgba(100, 100, 100, 0.02) !important;
-    transition: transform .5s linear;
+    animation: glow 0.4s infinite alternate;
+}
 
+@keyframes glow {
+    from {
+      box-shadow: 0 0 7px -7px #808080;
+    }
+    to {
+      box-shadow: 0 0 7px 7px #ffffff;
+    }
 }
 
 .card-image {
@@ -77,9 +90,4 @@ body{
     width: 85%;
     margin: 0 auto;
     padding-top: 7%;
-}
-
-
-.column{
-    transform: rotateX(28deg) translateZ(8px) !important;
 }
