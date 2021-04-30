@@ -78,6 +78,22 @@ const Modal = personaje => {
 
 //-------------------- CODE --------------------
 
+$('.rick').click(function(img){
+    $('.rick').attr('src', 'assets/images/rickfu.gif');
+    setTimeout(function(){
+        $('.rick').attr('src', 'assets/images/gifrick.gif');
+    }, 1300);
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop()>700){
+        $('.rick').fadeOut();
+     }
+    else{
+      $('.rick').fadeIn();
+     }
+ });
+
 
 const appendElements = (characters, borrarGrilla = false) => {
     const $grid = document.querySelector('.grid');
