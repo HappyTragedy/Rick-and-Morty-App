@@ -73,15 +73,15 @@ body{
 }
 
 .card{
-    animation: glow 0.4s infinite alternate;
+    animation: glow 0.3s infinite alternate;
 }
 
 @keyframes glow {
     from {
-      box-shadow: 0 0 7px -7px #808080;
+      box-shadow: 0 0 10px -7px #bebebe;
     }
     to {
-      box-shadow: 0 0 7px 7px #ffffff;
+      box-shadow: 0 0 10px 7px #ffffff;
     }
 }
 
@@ -91,4 +91,13 @@ body{
     width: 85%;
     margin: 0 auto;
     padding-top: 7%;
+}
+
+.modal-content{
+    width: 75% !important;
+}
+
+.content ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
